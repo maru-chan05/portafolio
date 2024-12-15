@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Jose Pablo Dávila</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Encabezado -->
+  <header class="bg-gray-800 p-4 sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-blue-400">Jose Pablo Dávila</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-400">Sobre Mí</a></li>
+          <li><a href="#projects" class="hover:text-blue-400">Proyectos</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Introducción -->
+  <section id="intro" class="text-center py-16 bg-gray-900">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">¡Hola, soy Jose Pablo!</h2>
+      <p class="text-gray-400 text-lg">
+        Soy desarrollador de software profesional, especializado en crear soluciones tecnológicas innovadoras y eficientes usando React, Laravel y Node.js.
+      </p>
+      <a href="docs/CV.pdf" download class="mt-6 inline-block bg-blue-500 px-6 py-3 rounded shadow hover:bg-blue-600">
+        <i class="fas fa-download mr-2"></i> Descargar CV
+      </a>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Mí -->
+<section id="about" class="py-16 bg-gray-800">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-blue-400">Sobre Mí</h2>
+    <p class="text-gray-400 mb-6">
+      Me dedico al desarrollo de software profesional, enfocado en aplicaciones Fullstack usando tecnologías modernas como React, Laravel y Node.js.
+      Además, me apasiona aprender constantemente y mejorar mis habilidades para ofrecer soluciones innovadoras y eficientes.
+    </p>
+
+    <!-- Habilidades -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+      <!-- Tarjeta de Habilidad -->
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fab fa-js-square text-yellow-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">JavaScript</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fab fa-react text-blue-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">React</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fab fa-laravel text-red-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">Laravel</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fab fa-node-js text-green-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">Node.js</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fab fa-java text-blue-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">Java</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fab fa-python text-blue-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">Python</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fas fa-database text-yellow-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">MySQL</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-gray-900 h-32 w-32 rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <i class="fab fa-git text-orange-400 text-4xl mb-2"></i>
+        <p class="text-gray-300 font-bold">Git</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Sección Proyectos -->
+  <section id="projects" class="py-16 bg-gray-900">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 text-blue-400">PROYECTOS</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Proyecto FE-CR -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+          <img src="images/fecr.png" alt="FE-CR" class="rounded mb-4">
+          <h3 class="text-2xl font-bold mb-2">FE-CR</h3>
+          <p class="text-gray-400 mb-4">Sistema web para facturación electrónica con React y .NET 7.</p>
+          <div class="flex justify-center gap-4">
+            <i class="fab fa-react text-blue-400 text-2xl" title="React.js"></i>
+            <i class="fab fa-node-js text-green-400 text-2xl" title="Node.js"></i>
+            <i class="fas fa-cogs text-purple-400 text-2xl" title=".NET 7"></i>
+          </div>
+        </div>
+
+        <!-- Proyecto SIARE -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+          <img src="images/siare.gif" alt="SIARE" class="rounded mb-4">
+          <h3 class="text-2xl font-bold mb-2">SIARE</h3>
+          <p class="text-gray-400 mb-4">Sistema de acreditaciones con Laravel.</p>
+          <div class="flex justify-center gap-4">
+            <i class="fab fa-laravel text-red-400 text-2xl"></i>
+            <i class="fas fa-database text-yellow-400 text-2xl"></i>
+          </div>
+        </div>
+
+        <!-- Proyecto Awaq -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+          <img src="images/awaq.png" alt="Awaq Backend" class="rounded mb-4">
+          <h3 class="text-2xl font-bold mb-2">Awaq Backend</h3>
+          <p class="text-gray-400 mb-4">Backend para gestión de voluntarios en estaciones biológicas.</p>
+          <div class="flex justify-center gap-4">
+            <i class="fab fa-node text-green-400 text-2xl"></i>
+            <i class="fas fa-database text-yellow-400 text-2xl"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Sección Contacto -->
+  <section id="contact" class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-blue-400">Contacto</h2>
+      <p class="text-gray-400 mb-6">Contáctame a través de:</p>
+      <div class="flex justify-center gap-8">
+        <a href="mailto:jpdaviladp05@gmail.com" class="hover:text-blue-400">
+          <i class="fas fa-envelope text-2xl"></i> jpdaviladp05@gmail.com
+        </a>
+        <a href="https://github.com/maru-chan05" class="hover:text-blue-400">
+          <i class="fab fa-github text-2xl"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/pablo-davila-99a0b2228" class="hover:text-blue-400">
+          <i class="fab fa-linkedin text-2xl"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-4">
+    <p>&copy; 2024 Jose Pablo Dávila. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
