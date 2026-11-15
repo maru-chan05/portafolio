@@ -5,232 +5,311 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jose Pablo Dávila | Backend & Fullstack Developer</title>
   <meta name="description" content="Desarrollador backend y fullstack en Costa Rica: PHP/Laravel, C#/.NET, Node.js y SQL Server. Más de 2 años construyendo aplicaciones web en producción.">
+  <meta name="theme-color" content="#020617">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jose Pablo Dávila | Backend & Fullstack Developer">
-  <meta property="og:description" content="PHP/Laravel · C#/.NET · Node.js · SQL Server · Automatización de procesos. San José, Costa Rica.">
+  <meta property="og:description" content="PHP/Laravel · C#/.NET · Node.js · SQL Server · Azure. San José, Costa Rica.">
   <meta property="og:url" content="https://maru-chan05.github.io/portafolio/">
   <meta property="og:image" content="https://maru-chan05.github.io/portafolio/images/fecr.png">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2338bdf8'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='30' fill='%23020617'%3EJP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="output.css">
   <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
-<body class="bg-slate-950 text-slate-200 antialiased">
+<body class="bg-slate-950 font-sans text-slate-300 antialiased selection:bg-sky-400/30 selection:text-white">
 
-  <!-- Encabezado -->
-  <header class="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
+  <header class="sticky top-0 z-30 border-b border-white/5 bg-slate-950/80 backdrop-blur-md">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-      <a href="#top" class="text-lg font-bold text-white">Jose Pablo <span class="text-sky-400">Dávila</span></a>
-      <nav class="flex items-center gap-4 text-sm sm:gap-6">
-        <a href="#experiencia" class="hidden hover:text-sky-400 sm:inline"><span class="i-es">Experiencia</span><span class="i-en">Experience</span></a>
-        <a href="#proyectos" class="hidden hover:text-sky-400 sm:inline"><span class="i-es">Proyectos</span><span class="i-en">Projects</span></a>
-        <a href="#contacto" class="hidden hover:text-sky-400 sm:inline"><span class="i-es">Contacto</span><span class="i-en">Contact</span></a>
-        <button id="lang-toggle" type="button" class="rounded border border-slate-700 px-3 py-1 font-semibold hover:border-sky-400 hover:text-sky-400" aria-label="Cambiar idioma / Change language">
-          <span class="i-es">EN</span><span class="i-en">ES</span>
-        </button>
+      <a href="#top" class="group flex items-center gap-2.5 font-semibold text-white">
+        <span class="grid h-8 w-8 place-items-center rounded-lg bg-sky-400 font-mono text-sm font-bold text-slate-950 transition group-hover:rotate-6">JP</span>
+        <span>Jose Pablo <span class="text-sky-400">Dávila</span></span>
+      </a>
+      <nav class="flex items-center gap-1 text-sm">
+        <div class="hidden items-center gap-1 md:flex">
+          <a href="#stack" class="nav-link">Stack</a>
+          <a href="#experiencia" class="nav-link"><span class="i-es">Experiencia</span><span class="i-en">Experience</span></a>
+          <a href="#proyectos" class="nav-link"><span class="i-es">Proyectos</span><span class="i-en">Projects</span></a>
+          <a href="#contacto" class="nav-link"><span class="i-es">Contacto</span><span class="i-en">Contact</span></a>
+        </div>
+        <button id="lang-toggle" type="button" class="ml-2 rounded-md border border-white/10 px-3 py-1.5 font-mono text-xs font-semibold text-slate-200 transition hover:border-sky-400 hover:text-sky-400" aria-label="Cambiar idioma / Change language"><span class="i-es">EN</span><span class="i-en">ES</span></button>
+        <button id="menu-toggle" type="button" class="ml-1 rounded-md border border-white/10 px-3 py-1.5 text-slate-200 md:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menú"><i class="fas fa-bars"></i></button>
       </nav>
+    </div>
+    <div id="mobile-menu" class="hidden border-t border-white/5 px-4 pb-3 pt-2 md:hidden">
+      <a href="#stack" class="mobile-link">Stack</a>
+      <a href="#experiencia" class="mobile-link"><span class="i-es">Experiencia</span><span class="i-en">Experience</span></a>
+      <a href="#proyectos" class="mobile-link"><span class="i-es">Proyectos</span><span class="i-en">Projects</span></a>
+      <a href="#contacto" class="mobile-link"><span class="i-es">Contacto</span><span class="i-en">Contact</span></a>
     </div>
   </header>
 
   <main id="top">
 
     <!-- Hero -->
-    <section class="mx-auto max-w-6xl px-4 pb-16 pt-20 sm:pt-28">
-      <p class="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-sm text-emerald-300">
-        <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-        <span class="i-es">Disponible · remoto o híbrido</span><span class="i-en">Available · remote or hybrid</span>
-      </p>
-      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">Jose Pablo Dávila Pérez</h1>
-      <p class="mt-3 text-xl font-semibold text-sky-400 sm:text-2xl">Backend & Fullstack Developer</p>
-      <p class="mt-5 max-w-2xl text-lg text-slate-400">
-        <span class="i-es">Más de 2 años construyendo y manteniendo aplicaciones web en producción con PHP/Laravel, C#/.NET y Node.js, sobre SQL Server y MySQL. Me enfoco en sistemas que reducen trabajo manual: integraciones, APIs REST y automatización de procesos.</span>
-        <span class="i-en">2+ years building and maintaining production web applications with PHP/Laravel, C#/.NET and Node.js on SQL Server and MySQL. I focus on systems that cut manual work: integrations, REST APIs and process automation.</span>
-      </p>
-      <p class="mt-3 text-sm text-slate-500"><i class="fas fa-location-dot mr-1"></i> San José, Costa Rica · <span class="i-es">Español nativo · Inglés B2</span><span class="i-en">Native Spanish · English B2</span></p>
+    <section class="hero-bg relative overflow-hidden">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-16 pt-16 sm:pt-24 lg:grid-cols-[1.15fr_1fr]">
+        <div class="reveal">
+          <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-300">
+            <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span></span>
+            <span class="i-es">Disponible · remoto o híbrido</span><span class="i-en">Available · remote or hybrid</span>
+          </p>
+          <h1 class="text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl">
+            Jose Pablo<br><span class="bg-gradient-to-r from-sky-300 via-sky-400 to-indigo-400 bg-clip-text text-transparent">Dávila Pérez</span>
+          </h1>
+          <p class="mt-4 font-mono text-base text-sky-300 sm:text-lg">&gt; Backend &amp; Fullstack Developer<span class="caret">_</span></p>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-400">
+            <span class="i-es">Más de 2 años construyendo y manteniendo aplicaciones web en producción con <strong class="font-semibold text-slate-200">PHP/Laravel, C#/.NET y Node.js</strong>, sobre SQL Server y MySQL. Me enfoco en sistemas que reducen trabajo manual: integraciones, APIs REST y automatización de procesos.</span>
+            <span class="i-en">2+ years building and maintaining production web applications with <strong class="font-semibold text-slate-200">PHP/Laravel, C#/.NET and Node.js</strong> on SQL Server and MySQL. I focus on systems that cut manual work: integrations, REST APIs and process automation.</span>
+          </p>
+          <p class="mt-4 text-sm text-slate-500"><i class="fas fa-location-dot mr-1.5 text-slate-600"></i>San José, Costa Rica <span class="mx-2 text-slate-700">/</span><span class="i-es">Español nativo · Inglés B2</span><span class="i-en">Native Spanish · English B2</span></p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="docs/Jose_Davila_CV.pdf" download class="btn-primary"><i class="fas fa-download mr-2"></i><span class="i-es">CV en español</span><span class="i-en">CV (Spanish)</span></a>
+            <a href="docs/Jose_Davila_CV_EN.pdf" download class="btn-outline"><i class="fas fa-download mr-2"></i><span class="i-es">CV en inglés</span><span class="i-en">CV (English)</span></a>
+            <a href="https://www.linkedin.com/in/pablo-davila-dev" target="_blank" rel="noopener" class="btn-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/maru-chan05" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
 
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="docs/Jose_Davila_CV.pdf" download class="rounded-md bg-sky-500 px-5 py-3 font-semibold text-slate-950 hover:bg-sky-400">
-          <i class="fas fa-download mr-2"></i><span class="i-es">CV en español</span><span class="i-en">CV (Spanish)</span>
-        </a>
-        <a href="docs/Jose_Davila_CV_EN.pdf" download class="rounded-md border border-sky-500 px-5 py-3 font-semibold text-sky-300 hover:bg-sky-500/10">
-          <i class="fas fa-download mr-2"></i><span class="i-es">CV en inglés</span><span class="i-en">CV (English)</span>
-        </a>
-        <a href="https://www.linkedin.com/in/pablo-davila-dev" target="_blank" rel="noopener" class="rounded-md border border-slate-700 px-5 py-3 hover:border-sky-400 hover:text-sky-400">
-          <i class="fab fa-linkedin mr-2"></i>LinkedIn
-        </a>
-        <a href="https://github.com/maru-chan05" target="_blank" rel="noopener" class="rounded-md border border-slate-700 px-5 py-3 hover:border-sky-400 hover:text-sky-400">
-          <i class="fab fa-github mr-2"></i>GitHub
-        </a>
+        <div class="reveal relative" style="--d: 120ms">
+          <div class="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-sky-500/20 via-indigo-500/10 to-transparent blur-2xl"></div>
+          <div class="overflow-hidden rounded-xl border border-white/10 bg-slate-900/80 shadow-2xl shadow-sky-950/50">
+            <div class="flex items-center gap-2 border-b border-white/5 px-4 py-3">
+              <span class="h-3 w-3 rounded-full bg-rose-400/80"></span><span class="h-3 w-3 rounded-full bg-amber-400/80"></span><span class="h-3 w-3 rounded-full bg-emerald-400/80"></span>
+              <span class="ml-3 font-mono text-xs text-slate-500">developer.ts</span>
+            </div>
+<pre class="overflow-x-auto p-5 font-mono text-[13px] leading-6 sm:text-sm"><code><span class="tk-k">const</span> <span class="tk-v">pablo</span> = {
+  <span class="tk-p">role</span>: <span class="tk-s">"Backend &amp; Fullstack"</span>,
+  <span class="tk-p">backend</span>: [<span class="tk-s">"Laravel"</span>, <span class="tk-s">".NET"</span>, <span class="tk-s">"Node.js"</span>],
+  <span class="tk-p">databases</span>: [<span class="tk-s">"SQL Server"</span>, <span class="tk-s">"MySQL"</span>],
+  <span class="tk-p">cloud</span>: [<span class="tk-s">"Azure"</span>, <span class="tk-s">"Firebase"</span>],
+  <span class="tk-p">automation</span>: [<span class="tk-s">"Selenium"</span>, <span class="tk-s">"Asterisk"</span>],
+  <span class="tk-p">location</span>: <span class="tk-s">"San José, CR"</span>,
+  <span class="tk-p">openToWork</span>: <span class="tk-k">true</span>,
+};</code></pre>
+          </div>
+        </div>
       </div>
 
-      <!-- Cifras -->
-      <dl class="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <div class="rounded-lg border border-slate-800 bg-slate-900 p-4">
-          <dt class="text-sm text-slate-400"><span class="i-es">Experiencia</span><span class="i-en">Experience</span></dt>
-          <dd class="text-3xl font-bold text-white">2+ <span class="text-base font-normal text-slate-400"><span class="i-es">años</span><span class="i-en">years</span></span></dd>
-        </div>
-        <div class="rounded-lg border border-slate-800 bg-slate-900 p-4">
-          <dt class="text-sm text-slate-400"><span class="i-es">Menos tiempo operativo (SIARE)</span><span class="i-en">Less operational time (SIARE)</span></dt>
-          <dd class="text-3xl font-bold text-white">−40%</dd>
-        </div>
-        <div class="rounded-lg border border-slate-800 bg-slate-900 p-4">
-          <dt class="text-sm text-slate-400">SQL Server</dt>
-          <dd class="text-3xl font-bold text-white">3+ <span class="text-base font-normal text-slate-400"><span class="i-es">años</span><span class="i-en">years</span></span></dd>
-        </div>
-        <div class="rounded-lg border border-slate-800 bg-slate-900 p-4">
-          <dt class="text-sm text-slate-400"><span class="i-es">Colegiado CPIC</span><span class="i-en">CPIC member</span></dt>
-          <dd class="text-3xl font-bold text-white">#12456</dd>
-        </div>
-      </dl>
+      <div class="mx-auto max-w-6xl px-4 pb-20">
+        <dl class="reveal grid grid-cols-2 overflow-hidden rounded-xl border border-white/10 bg-white/[0.02] backdrop-blur-sm sm:grid-cols-4">
+          <div class="stat"><dd class="stat-num">2+</dd><dt class="stat-label"><span class="i-es">años de experiencia</span><span class="i-en">years of experience</span></dt></div>
+          <div class="stat"><dd class="stat-num">~41k</dd><dt class="stat-label"><span class="i-es">enlaces de votación (SiVE, UCR)</span><span class="i-en">voting links sent (SiVE, UCR)</span></dt></div>
+          <div class="stat"><dd class="stat-num">−40%</dd><dt class="stat-label"><span class="i-es">tiempo operativo en SIARE</span><span class="i-en">operational time at SIARE</span></dt></div>
+          <div class="stat"><dd class="stat-num">3+</dd><dt class="stat-label"><span class="i-es">años con SQL Server</span><span class="i-en">years with SQL Server</span></dt></div>
+        </dl>
+      </div>
     </section>
 
     <!-- Stack -->
-    <section id="stack" class="border-y border-slate-800 bg-slate-900/50">
-      <div class="mx-auto max-w-6xl px-4 py-16">
-        <h2 class="text-3xl font-bold text-white"><span class="i-es">Stack</span><span class="i-en">Tech stack</span></h2>
-        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-sky-400">Backend</h3>
-            <ul class="flex flex-wrap gap-2">
-              <li class="chip">PHP 7.4+</li><li class="chip">Laravel</li><li class="chip">C# / .NET</li><li class="chip">ASP.NET MVC / Web API</li><li class="chip">Node.js</li><li class="chip">APIs REST</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-sky-400"><span class="i-es">Bases de datos</span><span class="i-en">Databases</span></h3>
-            <ul class="flex flex-wrap gap-2">
-              <li class="chip">SQL Server</li><li class="chip">MySQL</li><li class="chip"><span class="i-es">Procedimientos almacenados</span><span class="i-en">Stored procedures</span></li><li class="chip">Sequelize</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-sky-400">Frontend</h3>
-            <ul class="flex flex-wrap gap-2">
-              <li class="chip">React</li><li class="chip">JavaScript</li><li class="chip">Tailwind CSS</li><li class="chip">Bootstrap</li><li class="chip">AJAX</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-sky-400"><span class="i-es">Herramientas</span><span class="i-en">Tools</span></h3>
-            <ul class="flex flex-wrap gap-2">
-              <li class="chip">Selenium</li><li class="chip">Git</li><li class="chip">Docker</li><li class="chip">Azure</li><li class="chip">Asterisk</li><li class="chip">Scrum</li>
-            </ul>
-          </div>
+    <section id="stack" class="section">
+      <div class="reveal section-head"><p class="section-num">01</p><h2 class="section-title"><span class="i-es">Stack técnico</span><span class="i-en">Tech stack</span></h2></div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="reveal card p-5">
+          <div class="card-icon"><i class="fas fa-server"></i></div>
+          <h3 class="card-title">Backend</h3>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">PHP 7.4+</li><li class="chip">Laravel</li><li class="chip">C# / .NET</li><li class="chip">ASP.NET MVC</li><li class="chip">Web API</li><li class="chip">Node.js</li></ul>
+        </div>
+        <div class="reveal card p-5" style="--d: 60ms">
+          <div class="card-icon"><i class="fas fa-database"></i></div>
+          <h3 class="card-title"><span class="i-es">Datos</span><span class="i-en">Data</span></h3>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">SQL Server</li><li class="chip">Azure SQL</li><li class="chip">MySQL</li><li class="chip"><span class="i-es">Proc. almacenados</span><span class="i-en">Stored procedures</span></li><li class="chip">Sequelize</li></ul>
+        </div>
+        <div class="reveal card p-5" style="--d: 120ms">
+          <div class="card-icon"><i class="fas fa-cloud"></i></div>
+          <h3 class="card-title"><span class="i-es">Nube y DevOps</span><span class="i-en">Cloud &amp; DevOps</span></h3>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Azure App Service</li><li class="chip">Firebase</li><li class="chip">Docker</li><li class="chip">Git</li><li class="chip">Scrum</li></ul>
+        </div>
+        <div class="reveal card p-5" style="--d: 180ms">
+          <div class="card-icon"><i class="fas fa-display"></i></div>
+          <h3 class="card-title"><span class="i-es">Frontend y automatización</span><span class="i-en">Frontend &amp; automation</span></h3>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">React</li><li class="chip">Tailwind CSS</li><li class="chip">Bootstrap</li><li class="chip">Selenium</li><li class="chip">Asterisk</li></ul>
         </div>
       </div>
     </section>
 
     <!-- Experiencia -->
-    <section id="experiencia" class="mx-auto max-w-6xl px-4 py-16">
-      <h2 class="text-3xl font-bold text-white"><span class="i-es">Experiencia</span><span class="i-en">Experience</span></h2>
-      <ol class="mt-8 space-y-10 border-l border-slate-800 pl-6">
+    <section id="experiencia" class="section">
+      <div class="reveal section-head"><p class="section-num">02</p><h2 class="section-title"><span class="i-es">Experiencia</span><span class="i-en">Experience</span></h2></div>
+      <ol class="relative space-y-6 before:absolute before:bottom-2 before:left-[7px] before:top-2 before:w-px before:bg-gradient-to-b before:from-sky-400/60 before:via-white/10 before:to-transparent">
 
-        <li class="relative">
-          <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-sky-400 ring-4 ring-slate-950"></span>
-          <h3 class="text-lg font-semibold text-white"><span class="i-es">Desarrollador de Software</span><span class="i-en">Software Developer</span> · <span class="text-sky-400">POM Cobranzas</span></h3>
-          <p class="text-sm text-slate-500"><span class="i-es">Mar 2024 – actualidad · San José, Costa Rica</span><span class="i-en">Mar 2024 – present · San José, Costa Rica</span></p>
-          <ul class="mt-3 list-disc space-y-1 pl-5 text-slate-400">
-            <li><span class="i-es">Bots con Selenium que automatizan la extracción, validación y carga de datos internos, reduciendo tiempos operativos.</span><span class="i-en">Selenium bots that automate internal data extraction, validation and loading, reducing operational time.</span></li>
-            <li><span class="i-es">Módulo de telefonía con Asterisk y SIPSorcery integrado al sistema principal mediante APIs y comunicación asíncrona.</span><span class="i-en">Telephony module with Asterisk and SIPSorcery, integrated into the core system via APIs and asynchronous messaging.</span></li>
-            <li><span class="i-es">Diseño y optimización de consultas, procedimientos almacenados y modelos de datos en SQL Server.</span><span class="i-en">Design and tuning of SQL Server queries, stored procedures and data models.</span></li>
-            <li><span class="i-es">Migración de un sistema de escritorio a aplicación web, en sprints bajo Scrum.</span><span class="i-en">Migration of a desktop system to a web application, in Scrum sprints.</span></li>
-          </ul>
+        <li class="reveal relative pl-10">
+          <span class="dot dot-active"></span>
+          <div class="card p-6">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <h3 class="text-lg font-semibold text-white"><span class="i-es">Desarrollador de Software</span><span class="i-en">Software Developer</span> <span class="text-sky-400">@ POM Cobranzas</span></h3>
+              <p class="font-mono text-xs text-slate-500"><span class="i-es">mar 2024 — actualidad</span><span class="i-en">Mar 2024 — present</span></p>
+            </div>
+            <p class="mt-1 text-sm text-slate-500">San José, Costa Rica</p>
+            <ul class="bullets mt-4">
+              <li><span class="i-es">Bots con Selenium que automatizan la extracción, validación y carga de datos internos, reduciendo tiempos operativos.</span><span class="i-en">Selenium bots that automate internal data extraction, validation and loading, reducing operational time.</span></li>
+              <li><span class="i-es">Módulo de telefonía con Asterisk y SIPSorcery integrado al sistema principal mediante APIs y comunicación asíncrona.</span><span class="i-en">Telephony module with Asterisk and SIPSorcery, integrated into the core system via APIs and asynchronous messaging.</span></li>
+              <li><span class="i-es">Diseño y optimización de consultas, procedimientos almacenados y modelos de datos en SQL Server.</span><span class="i-en">Design and tuning of SQL Server queries, stored procedures and data models.</span></li>
+              <li><span class="i-es">Migración de un sistema de escritorio a aplicación web, en sprints bajo Scrum.</span><span class="i-en">Migration of a desktop system to a web application, in Scrum sprints.</span></li>
+            </ul>
+            <ul class="mt-5 flex flex-wrap gap-2"><li class="chip-sm">PHP</li><li class="chip-sm">SQL Server</li><li class="chip-sm">Selenium</li><li class="chip-sm">Asterisk</li><li class="chip-sm">C#</li></ul>
+          </div>
         </li>
 
-        <li class="relative">
-          <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-slate-600 ring-4 ring-slate-950"></span>
-          <h3 class="text-lg font-semibold text-white">Backend Engineer · <span class="text-sky-400"><span class="i-es">Awaq Estaciones Biológicas ONGD</span><span class="i-en">Awaq Biological Stations NGO</span></span></h3>
-          <p class="text-sm text-slate-500"><span class="i-es">Nov 2024 – dic 2024 · Madrid, España (remoto)</span><span class="i-en">Nov 2024 – Dec 2024 · Madrid, Spain (remote)</span></p>
-          <ul class="mt-3 list-disc space-y-1 pl-5 text-slate-400">
-            <li><span class="i-es">Backend en Node.js con Sequelize para un sistema de gestión de hospedaje, con la base de datos relacional modelada desde cero.</span><span class="i-en">Node.js + Sequelize backend for a lodging management system, with the relational database modeled from scratch.</span></li>
-            <li><span class="i-es">Endpoints RESTful para asignar y dar seguimiento a voluntarios en distintas estaciones.</span><span class="i-en">RESTful endpoints to assign and track volunteers across stations.</span></li>
-          </ul>
+        <li class="reveal relative pl-10">
+          <span class="dot"></span>
+          <div class="card p-6">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <h3 class="text-lg font-semibold text-white">Backend Engineer <span class="text-sky-400">@ <span class="i-es">Awaq Estaciones Biológicas ONGD</span><span class="i-en">Awaq Biological Stations NGO</span></span></h3>
+              <p class="font-mono text-xs text-slate-500"><span class="i-es">nov 2024 — dic 2024</span><span class="i-en">Nov 2024 — Dec 2024</span></p>
+            </div>
+            <p class="mt-1 text-sm text-slate-500"><span class="i-es">Madrid, España · remoto</span><span class="i-en">Madrid, Spain · remote</span></p>
+            <ul class="bullets mt-4">
+              <li><span class="i-es">Backend en Node.js con Sequelize para un sistema de gestión de hospedaje, con la base de datos relacional modelada desde cero.</span><span class="i-en">Node.js + Sequelize backend for a lodging management system, with the relational database modeled from scratch.</span></li>
+              <li><span class="i-es">Endpoints RESTful para asignar y dar seguimiento a voluntarios en distintas estaciones.</span><span class="i-en">RESTful endpoints to assign and track volunteers across stations.</span></li>
+            </ul>
+            <ul class="mt-5 flex flex-wrap gap-2"><li class="chip-sm">Node.js</li><li class="chip-sm">Sequelize</li><li class="chip-sm">REST</li></ul>
+          </div>
         </li>
 
-        <li class="relative">
-          <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-slate-600 ring-4 ring-slate-950"></span>
-          <h3 class="text-lg font-semibold text-white"><span class="i-es">Desarrollador Freelance</span><span class="i-en">Freelance Developer</span> · <span class="text-sky-400"><span class="i-es">Universidad de Costa Rica</span><span class="i-en">University of Costa Rica</span></span></h3>
-          <p class="text-sm text-slate-500"><span class="i-es">Ene 2024 – nov 2024 · San José, Costa Rica</span><span class="i-en">Jan 2024 – Nov 2024 · San José, Costa Rica</span></p>
-          <ul class="mt-3 list-disc space-y-1 pl-5 text-slate-400">
-            <li><span class="i-es">Diseño y desarrollo de SIARE en Laravel: virtualizó la acreditación universitaria y redujo un 40% los tiempos operativos.</span><span class="i-en">Designed and built SIARE in Laravel: digitized university accreditation and cut operational time by 40%.</span></li>
-            <li><span class="i-es">Seguridad backend: validación y sanitización de entradas, protección contra SQL Injection y XSS.</span><span class="i-en">Backend security: input validation and sanitization, protection against SQL Injection and XSS.</span></li>
-          </ul>
+        <li class="reveal relative pl-10">
+          <span class="dot"></span>
+          <div class="card p-6">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <h3 class="text-lg font-semibold text-white"><span class="i-es">Desarrollador Freelance</span><span class="i-en">Freelance Developer</span> <span class="text-sky-400">@ <span class="i-es">Universidad de Costa Rica</span><span class="i-en">University of Costa Rica</span></span></h3>
+              <p class="font-mono text-xs text-slate-500"><span class="i-es">ene 2024 — nov 2024</span><span class="i-en">Jan 2024 — Nov 2024</span></p>
+            </div>
+            <p class="mt-1 text-sm text-slate-500">San José, Costa Rica</p>
+            <ul class="bullets mt-4">
+              <li><span class="i-es">Diseño y desarrollo de SIARE en Laravel: virtualizó la acreditación universitaria y redujo un 40% los tiempos operativos.</span><span class="i-en">Designed and built SIARE in Laravel: digitized university accreditation and cut operational time by 40%.</span></li>
+              <li><span class="i-es">Seguridad backend: validación y sanitización de entradas, protección contra SQL Injection y XSS.</span><span class="i-en">Backend security: input validation and sanitization, protection against SQL Injection and XSS.</span></li>
+            </ul>
+            <ul class="mt-5 flex flex-wrap gap-2"><li class="chip-sm">Laravel</li><li class="chip-sm">MySQL</li><li class="chip-sm">Bootstrap</li><li class="chip-sm">AJAX</li></ul>
+          </div>
         </li>
 
-        <li class="relative">
-          <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-slate-600 ring-4 ring-slate-950"></span>
-          <h3 class="text-lg font-semibold text-white"><span class="i-es">Desarrollador Full Stack Junior</span><span class="i-en">Junior Full Stack Developer</span> · <span class="text-sky-400">Eclipse Software</span></h3>
-          <p class="text-sm text-slate-500"><span class="i-es">Mar 2023 – mar 2024 · Liberia, Guanacaste</span><span class="i-en">Mar 2023 – Mar 2024 · Liberia, Guanacaste</span></p>
-          <ul class="mt-3 list-disc space-y-1 pl-5 text-slate-400">
-            <li><span class="i-es">Desarrollo fullstack con React y Tailwind en el frontend y C#/.NET (Framework, Core, MVC, Web API) con SQL Server en el backend.</span><span class="i-en">Fullstack work with React and Tailwind on the frontend and C#/.NET (Framework, Core, MVC, Web API) with SQL Server on the backend.</span></li>
-          </ul>
+        <li class="reveal relative pl-10">
+          <span class="dot"></span>
+          <div class="card p-6">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <h3 class="text-lg font-semibold text-white"><span class="i-es">Desarrollador Full Stack Junior</span><span class="i-en">Junior Full Stack Developer</span> <span class="text-sky-400">@ Eclipse Software</span></h3>
+              <p class="font-mono text-xs text-slate-500"><span class="i-es">mar 2023 — mar 2024</span><span class="i-en">Mar 2023 — Mar 2024</span></p>
+            </div>
+            <p class="mt-1 text-sm text-slate-500">Liberia, Guanacaste</p>
+            <ul class="bullets mt-4">
+              <li><span class="i-es">Desarrollo fullstack con React y Tailwind en el frontend y C#/.NET (Framework, Core, MVC, Web API) con SQL Server en el backend.</span><span class="i-en">Fullstack work with React and Tailwind on the frontend and C#/.NET (Framework, Core, MVC, Web API) with SQL Server on the backend.</span></li>
+            </ul>
+            <ul class="mt-5 flex flex-wrap gap-2"><li class="chip-sm">React</li><li class="chip-sm">.NET</li><li class="chip-sm">SQL Server</li><li class="chip-sm">Tailwind</li></ul>
+          </div>
         </li>
       </ol>
 
-      <div class="mt-10 grid gap-4 sm:grid-cols-2">
-        <div class="rounded-lg border border-slate-800 bg-slate-900 p-4">
-          <p class="font-semibold text-white"><i class="fas fa-graduation-cap mr-2 text-sky-400"></i><span class="i-es">Bachillerato en Informática Empresarial</span><span class="i-en">B.S. in Business Informatics</span></p>
-          <p class="text-sm text-slate-400"><span class="i-es">Universidad de Costa Rica · 2024</span><span class="i-en">University of Costa Rica · 2024</span></p>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2">
+        <div class="reveal card flex items-start gap-4 p-5">
+          <div class="card-icon shrink-0"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <p class="font-semibold text-white"><span class="i-es">Bachillerato en Informática Empresarial</span><span class="i-en">B.S. in Business Informatics</span></p>
+            <p class="text-sm text-slate-400"><span class="i-es">Universidad de Costa Rica · 2024</span><span class="i-en">University of Costa Rica · 2024</span></p>
+          </div>
         </div>
-        <div class="rounded-lg border border-slate-800 bg-slate-900 p-4">
-          <p class="font-semibold text-white"><i class="fas fa-certificate mr-2 text-sky-400"></i>Scrum Foundation Professional Certification (SFPC™)</p>
-          <p class="text-sm text-slate-400">CertiProf · 2024</p>
+        <div class="reveal card flex items-start gap-4 p-5" style="--d: 60ms">
+          <div class="card-icon shrink-0"><i class="fas fa-certificate"></i></div>
+          <div>
+            <p class="font-semibold text-white">Scrum Foundation Professional Certification (SFPC™)</p>
+            <p class="text-sm text-slate-400">CertiProf · 2024 <span class="mx-1 text-slate-600">·</span> <span class="i-es">Colegiado CPIC #12456</span><span class="i-en">CPIC member #12456</span></p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Proyectos -->
-    <section id="proyectos" class="border-y border-slate-800 bg-slate-900/50">
-      <div class="mx-auto max-w-6xl px-4 py-16">
-        <h2 class="text-3xl font-bold text-white"><span class="i-es">Proyectos destacados</span><span class="i-en">Featured projects</span></h2>
-        <div class="mt-8 grid gap-6 md:grid-cols-3">
+    <section id="proyectos" class="section">
+      <div class="reveal section-head"><p class="section-num">03</p><h2 class="section-title"><span class="i-es">Proyectos destacados</span><span class="i-en">Featured projects</span></h2></div>
 
-          <article class="flex flex-col overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
-            <img src="images/siare.gif" alt="SIARE" loading="lazy" class="aspect-video w-full object-cover object-top">
-            <div class="flex flex-1 flex-col p-5">
-              <h3 class="text-xl font-bold text-white">SIARE</h3>
-              <p class="mt-2 text-slate-400"><span class="i-es">Plataforma web que virtualiza los procesos de acreditación y jerarquización de la UCR, con flujos de trabajo en línea que redujeron los tiempos operativos un 40%.</span><span class="i-en">Web platform that digitizes UCR's accreditation and ranking processes, with online workflows that cut operational time by 40%.</span></p>
-              <ul class="mt-auto flex flex-wrap gap-2 pt-4"><li class="chip">Laravel</li><li class="chip">MySQL</li><li class="chip">Tailwind</li></ul>
+      <!-- SiVE: proyecto principal -->
+      <article class="reveal card group mb-6 grid overflow-hidden lg:grid-cols-[1fr_1.2fr]">
+        <div class="relative flex min-h-[240px] flex-col justify-between overflow-hidden bg-gradient-to-br from-sky-500/25 via-indigo-500/15 to-slate-950 p-8">
+          <div class="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-sky-400/20 blur-3xl"></div>
+          <div class="relative flex items-center gap-3">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-white/10 text-2xl text-white ring-1 ring-white/20"><i class="fas fa-check-to-slot"></i></span>
+            <div>
+              <p class="text-2xl font-bold text-white">SiVE</p>
+              <p class="text-sm text-sky-200/80"><span class="i-es">Sistema de Votación Estudiantil · UCR</span><span class="i-en">Student Voting System · UCR</span></p>
             </div>
-          </article>
-
-          <article class="flex flex-col overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
-            <img src="images/fecr.png" alt="FE-CR API" loading="lazy" class="aspect-video w-full object-cover object-top">
-            <div class="flex flex-1 flex-col p-5">
-              <h3 class="text-xl font-bold text-white">FE-CR</h3>
-              <p class="mt-2 text-slate-400"><span class="i-es">Sistema de facturación electrónica y gestión de inventarios para Costa Rica, con integración de APIs y base de datos.</span><span class="i-en">Electronic invoicing and inventory management system for Costa Rica, with API and database integration.</span></p>
-              <ul class="mt-auto flex flex-wrap gap-2 pt-4"><li class="chip">React</li><li class="chip">.NET 7</li><li class="chip">SQL Server</li></ul>
-            </div>
-          </article>
-
-          <article class="flex flex-col overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
-            <img src="images/awaq.png" alt="Awaq API" loading="lazy" class="aspect-video w-full object-cover object-top">
-            <div class="flex flex-1 flex-col p-5">
-              <h3 class="text-xl font-bold text-white">Awaq Backend</h3>
-              <p class="mt-2 text-slate-400"><span class="i-es">API REST para una ONG española: hospedaje y seguimiento de voluntarios en estaciones biológicas, con el modelo de datos diseñado desde cero.</span><span class="i-en">REST API for a Spanish NGO: lodging and volunteer tracking across biological stations, with the data model designed from scratch.</span></p>
-              <ul class="mt-auto flex flex-wrap gap-2 pt-4"><li class="chip">Node.js</li><li class="chip">Sequelize</li><li class="chip">REST</li></ul>
-            </div>
-          </article>
-
+          </div>
+          <dl class="relative mt-8 grid grid-cols-2 gap-4">
+            <div><dd class="text-3xl font-bold text-white">~41k</dd><dt class="text-sm text-slate-300"><span class="i-es">enlaces de votación enviados</span><span class="i-en">voting links sent</span></dt></div>
+            <div><dd class="text-3xl font-bold text-white">~8×</dd><dt class="text-sm text-slate-300"><span class="i-es">más rápido el envío masivo</span><span class="i-en">faster bulk sending</span></dt></div>
+          </dl>
         </div>
+        <div class="flex flex-col p-6 sm:p-8">
+          <p class="font-mono text-xs text-sky-400"><span class="i-es">Oct 2026 · Despliegue y operación</span><span class="i-en">Oct 2026 · Deployment &amp; operations</span></p>
+          <h3 class="mt-1 text-2xl font-bold text-white"><span class="i-es">Elecciones estudiantiles de la Universidad de Costa Rica</span><span class="i-en">University of Costa Rica student elections</span></h3>
+          <p class="mt-3 leading-relaxed text-slate-400"><span class="i-es">Despliegue en Azure del sistema de votación electrónica del Tribunal Electoral Estudiantil Universitario: padrón, juntas receptoras y app de voto, con papeletas cifradas con RSA-4096.</span><span class="i-en">Azure deployment of the University Student Electoral Tribunal's e-voting system: voter roll, polling boards and voting app, with RSA-4096 encrypted ballots.</span></p>
+          <ul class="bullets mt-4 text-sm">
+            <li><span class="i-es">Migración y puesta en marcha en Azure App Service y Azure SQL.</span><span class="i-en">Migration and go-live on Azure App Service and Azure SQL.</span></li>
+            <li><span class="i-es">Envío masivo de enlaces de votación a ~41 000 estudiantes: pasé de ~17 a ~135 correos por minuto escalando el plan para aprovechar el envío en paralelo.</span><span class="i-en">Bulk sending of voting links to ~41,000 students: went from ~17 to ~135 emails per minute by scaling the plan to use parallel sending.</span></li>
+            <li><span class="i-es">Ajustes en validaciones, plantillas de correo y configuración; soporte en vivo durante el proceso electoral.</span><span class="i-en">Fixes to validations, email templates and configuration; live support during the election.</span></li>
+          </ul>
+          <ul class="mt-auto flex flex-wrap gap-2 pt-6"><li class="chip-sm">ASP.NET MVC</li><li class="chip-sm">.NET 8</li><li class="chip-sm">Azure App Service</li><li class="chip-sm">Azure SQL</li><li class="chip-sm">SignalR</li></ul>
+        </div>
+      </article>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="reveal card group flex flex-col overflow-hidden">
+          <div class="overflow-hidden border-b border-white/5 bg-slate-900"><img src="images/siare.gif" alt="SIARE" loading="lazy" class="aspect-video w-full object-cover object-top transition duration-500 group-hover:scale-105"></div>
+          <div class="flex flex-1 flex-col p-5">
+            <p class="font-mono text-xs text-sky-400">Laravel · MySQL</p>
+            <h3 class="mt-1 text-xl font-bold text-white">SIARE</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400"><span class="i-es">Plataforma web que virtualiza los procesos de acreditación y jerarquización de la UCR, con flujos de trabajo en línea que redujeron los tiempos operativos un 40%.</span><span class="i-en">Web platform that digitizes UCR's accreditation and ranking processes, with online workflows that cut operational time by 40%.</span></p>
+            <p class="mt-auto pt-5 text-sm font-semibold text-emerald-300"><i class="fas fa-arrow-trend-down mr-1.5"></i><span class="i-es">−40% tiempo operativo</span><span class="i-en">−40% operational time</span></p>
+          </div>
+        </article>
+        <article class="reveal card group flex flex-col overflow-hidden" style="--d: 80ms">
+          <div class="overflow-hidden border-b border-white/5 bg-slate-900"><img src="images/fecr.png" alt="FE-CR API" loading="lazy" class="aspect-video w-full object-cover object-top transition duration-500 group-hover:scale-105"></div>
+          <div class="flex flex-1 flex-col p-5">
+            <p class="font-mono text-xs text-sky-400">React · .NET 7 · SQL Server</p>
+            <h3 class="mt-1 text-xl font-bold text-white">FE-CR</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400"><span class="i-es">Sistema de facturación electrónica y gestión de inventarios para Costa Rica, con integración de APIs y base de datos.</span><span class="i-en">Electronic invoicing and inventory management system for Costa Rica, with API and database integration.</span></p>
+            <p class="mt-auto pt-5 text-sm font-semibold text-slate-300"><i class="fas fa-file-invoice mr-1.5 text-sky-400"></i><span class="i-es">Facturación electrónica CR</span><span class="i-en">CR e-invoicing</span></p>
+          </div>
+        </article>
+        <article class="reveal card group flex flex-col overflow-hidden" style="--d: 160ms">
+          <div class="overflow-hidden border-b border-white/5 bg-slate-900"><img src="images/awaq.png" alt="Awaq API" loading="lazy" class="aspect-video w-full object-cover object-top transition duration-500 group-hover:scale-105"></div>
+          <div class="flex flex-1 flex-col p-5">
+            <p class="font-mono text-xs text-sky-400">Node.js · Sequelize · REST</p>
+            <h3 class="mt-1 text-xl font-bold text-white">Awaq Backend</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400"><span class="i-es">API REST para una ONG española: hospedaje y seguimiento de voluntarios en estaciones biológicas, con el modelo de datos diseñado desde cero.</span><span class="i-en">REST API for a Spanish NGO: lodging and volunteer tracking across biological stations, with the data model designed from scratch.</span></p>
+            <p class="mt-auto pt-5 text-sm font-semibold text-slate-300"><i class="fas fa-earth-europe mr-1.5 text-sky-400"></i><span class="i-es">Remoto · España</span><span class="i-en">Remote · Spain</span></p>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="mx-auto max-w-6xl px-4 py-16 text-center">
-      <h2 class="text-3xl font-bold text-white"><span class="i-es">¿Hablamos?</span><span class="i-en">Let's talk</span></h2>
-      <p class="mx-auto mt-3 max-w-xl text-slate-400"><span class="i-es">Busco roles backend o fullstack, remotos o híbridos. Escribime y te respondo pronto.</span><span class="i-en">I'm looking for backend or fullstack roles, remote or hybrid. Write me and I'll get back to you soon.</span></p>
-      <div class="mt-8 flex flex-wrap justify-center gap-3">
-        <a href="mailto:jpdaviladp05@gmail.com" class="rounded-md bg-sky-500 px-5 py-3 font-semibold text-slate-950 hover:bg-sky-400"><i class="fas fa-envelope mr-2"></i>jpdaviladp05@gmail.com</a>
-        <a href="https://www.linkedin.com/in/pablo-davila-dev" target="_blank" rel="noopener" class="rounded-md border border-slate-700 px-5 py-3 hover:border-sky-400 hover:text-sky-400"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
-        <a href="https://github.com/maru-chan05" target="_blank" rel="noopener" class="rounded-md border border-slate-700 px-5 py-3 hover:border-sky-400 hover:text-sky-400"><i class="fab fa-github mr-2"></i>GitHub</a>
+    <section id="contacto" class="mx-auto max-w-6xl px-4 pb-24 pt-4">
+      <div class="reveal relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-sky-500/15 via-slate-900 to-indigo-500/10 px-6 py-14 text-center sm:px-12">
+        <p class="section-num">04</p>
+        <h2 class="mt-2 text-3xl font-bold text-white sm:text-4xl"><span class="i-es">¿Hablamos?</span><span class="i-en">Let's talk</span></h2>
+        <p class="mx-auto mt-3 max-w-xl text-slate-400"><span class="i-es">Busco roles backend o fullstack, remotos o híbridos. Escribime y te respondo pronto.</span><span class="i-en">I'm looking for backend or fullstack roles, remote or hybrid. Write me and I'll get back to you soon.</span></p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="mailto:jpdaviladp05@gmail.com" class="btn-primary"><i class="fas fa-envelope mr-2"></i>jpdaviladp05@gmail.com</a>
+          <a href="https://www.linkedin.com/in/pablo-davila-dev" target="_blank" rel="noopener" class="btn-outline"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+          <a href="https://github.com/maru-chan05" target="_blank" rel="noopener" class="btn-outline"><i class="fab fa-github mr-2"></i>GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-slate-800 py-6 text-center text-sm text-slate-500">
-    &copy; <span id="year">2026</span> Jose Pablo Dávila Pérez
+  <footer class="border-t border-white/5 py-8">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-sm text-slate-500 sm:flex-row">
+      <p>&copy; <span id="year">2026</span> Jose Pablo Dávila Pérez</p>
+      <p class="font-mono text-xs">HTML · Tailwind CSS</p>
+    </div>
   </footer>
 
   <script>
     (function () {
       var root = document.documentElement;
+
       var saved = null;
       try { saved = localStorage.getItem('lang'); } catch (e) {}
       var lang = saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
@@ -241,6 +320,38 @@
         apply(next);
         try { localStorage.setItem('lang', next); } catch (e) {}
       });
+
+      var menuBtn = document.getElementById('menu-toggle');
+      var menu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', function () {
+        var open = !menu.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', String(open));
+      });
+      menu.addEventListener('click', function (e) {
+        if (e.target.closest('a')) { menu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false'); }
+      });
+
+      var items = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+          });
+        }, { rootMargin: '0px 0px -8% 0px' });
+        items.forEach(function (el) { io.observe(el); });
+
+        var links = document.querySelectorAll('.nav-link');
+        var navIo = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            links.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + en.target.id); });
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        ['stack', 'experiencia', 'proyectos', 'contacto'].forEach(function (id) { navIo.observe(document.getElementById(id)); });
+      } else {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+
       document.getElementById('year').textContent = new Date().getFullYear();
     })();
   </script>
