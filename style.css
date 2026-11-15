@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .chip {
+    @apply rounded-md border border-slate-700 bg-slate-800/60 px-2.5 py-1 text-sm text-slate-300;
+  }
+}
+
+/* Idioma: muestra solo el texto del idioma activo */
+html[data-lang="es"] .i-en,
+html[data-lang="en"] .i-es {
+  display: none;
+}
