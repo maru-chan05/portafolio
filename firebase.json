@@ -9,7 +9,8 @@
       "package-lock.json",
       "tailwind.config.js",
       "style.css",
-      "README.md"
+      "README.md",
+      "cv/**"
     ],
     "headers": [
       {

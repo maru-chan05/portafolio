@@ -1,0 +1,48 @@
+@page { size: Letter; margin: 0.38in 0.5in; }
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Calibri, "Segoe UI", Arial, sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.24;
+  color: #1f2937;
+  background: #fff;
+}
+
+header { text-align: center; margin-bottom: 4pt; }
+h1 { margin: 0; font-size: 21pt; letter-spacing: 0.2pt; color: #0f172a; }
+.headline { margin: 2pt 0 4pt; font-size: 11pt; font-weight: 700; color: #1d4ed8; }
+.contact { font-size: 9.3pt; color: #475569; }
+.contact a { color: inherit; text-decoration: none; }
+.contact span + span::before { content: "  |  "; color: #94a3b8; white-space: pre; }
+
+h2 {
+  margin: 7pt 0 3pt;
+  padding-bottom: 2pt;
+  border-bottom: 1.2pt solid #1d4ed8;
+  font-size: 10.8pt;
+  letter-spacing: 0.6pt;
+  text-transform: uppercase;
+  color: #1d4ed8;
+}
+
+p { margin: 0; }
+.summary { text-align: justify; }
+
+.job { margin-top: 4.5pt; break-inside: avoid; }
+.job-head { display: flex; justify-content: space-between; gap: 12pt; align-items: baseline; }
+.job-title { font-weight: 700; color: #0f172a; }
+.job-title .org { color: #1d4ed8; }
+.job-date { font-size: 9.3pt; color: #475569; white-space: nowrap; }
+.job-meta { font-size: 9.3pt; font-style: italic; color: #64748b; }
+
+ul { margin: 2pt 0 0; padding-left: 14pt; }
+li { margin: 0.8pt 0; }
+li strong { color: #0f172a; }
+
+.skills { display: grid; grid-template-columns: 100pt 1fr; gap: 1pt 8pt; }
+.skills dt { font-weight: 700; color: #0f172a; }
+.skills dd { margin: 0; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18pt; }
