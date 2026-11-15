@@ -111,7 +111,7 @@
         <div class="reveal card p-5">
           <div class="card-icon"><i class="fas fa-server"></i></div>
           <h3 class="card-title">Backend</h3>
-          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">PHP 7.4+</li><li class="chip">Laravel</li><li class="chip">C# / .NET</li><li class="chip">ASP.NET MVC</li><li class="chip">Web API</li><li class="chip">Node.js</li></ul>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">PHP 7.4+</li><li class="chip">Laravel</li><li class="chip">C# / .NET</li><li class="chip">ASP.NET MVC</li><li class="chip">Web API</li><li class="chip">SignalR</li><li class="chip">Node.js</li><li class="chip">Webhooks</li></ul>
         </div>
         <div class="reveal card p-5" style="--d: 60ms">
           <div class="card-icon"><i class="fas fa-database"></i></div>
@@ -145,12 +145,21 @@
             </div>
             <p class="mt-1 text-sm text-slate-500">San José, Costa Rica</p>
             <ul class="bullets mt-4">
+              <li><span class="i-es">Integración de WhatsApp para el CRM: API en ASP.NET Web API 2 sobre Evolution API, con webhook firmado con JWT, mensajes en SQL Server y notificaciones en tiempo real con SignalR en lugar de consultas periódicas a la API.</span><span class="i-en">WhatsApp integration for the CRM: ASP.NET Web API 2 service on top of Evolution API, with a JWT-signed webhook, messages stored in SQL Server and real-time SignalR notifications instead of polling the API.</span></li>
               <li><span class="i-es">Bots con Selenium que automatizan la extracción, validación y carga de datos internos, reduciendo tiempos operativos.</span><span class="i-en">Selenium bots that automate internal data extraction, validation and loading, reducing operational time.</span></li>
               <li><span class="i-es">Módulo de telefonía con Asterisk y SIPSorcery integrado al sistema principal mediante APIs y comunicación asíncrona.</span><span class="i-en">Telephony module with Asterisk and SIPSorcery, integrated into the core system via APIs and asynchronous messaging.</span></li>
               <li><span class="i-es">Diseño y optimización de consultas, procedimientos almacenados y modelos de datos en SQL Server.</span><span class="i-en">Design and tuning of SQL Server queries, stored procedures and data models.</span></li>
               <li><span class="i-es">Migración de un sistema de escritorio a aplicación web, en sprints bajo Scrum.</span><span class="i-en">Migration of a desktop system to a web application, in Scrum sprints.</span></li>
             </ul>
-            <ul class="mt-5 flex flex-wrap gap-2"><li class="chip-sm">PHP</li><li class="chip-sm">SQL Server</li><li class="chip-sm">Selenium</li><li class="chip-sm">Asterisk</li><li class="chip-sm">C#</li></ul>
+            <div class="mt-5 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+              <ul class="flex flex-wrap gap-2"><li class="chip-sm">C#</li><li class="chip-sm">Web API 2</li><li class="chip-sm">SignalR</li><li class="chip-sm">SQL Server</li><li class="chip-sm">PHP</li><li class="chip-sm">Selenium</li><li class="chip-sm">Asterisk</li></ul>
+              <figure class="group shrink-0 lg:w-80">
+                <div class="overflow-hidden rounded-lg border border-white/10">
+                  <img src="images/pom-navidad.jpg" alt="Pantalla de inicio de sesión del CRM de POM con tema navideño" loading="lazy" class="aspect-video w-full object-cover object-top transition duration-500 group-hover:scale-105">
+                </div>
+                <figcaption class="mt-2 text-xs text-slate-500"><i class="fas fa-snowflake mr-1 text-sky-400"></i><span class="i-es">El CRM con su tema navideño (CSS)</span><span class="i-en">The CRM with its Christmas theme (CSS)</span></figcaption>
+              </figure>
+            </div>
           </div>
         </li>
 
@@ -253,8 +262,25 @@
         </div>
       </article>
 
-      <div class="grid gap-6 md:grid-cols-3">
+      <div class="grid gap-6 md:grid-cols-2">
         <article class="reveal card group flex flex-col overflow-hidden">
+          <div class="relative flex aspect-video flex-col items-center justify-center gap-4 overflow-hidden border-b border-white/5 bg-gradient-to-br from-emerald-500/25 via-teal-500/10 to-slate-950">
+            <div class="absolute -left-8 -top-8 h-40 w-40 rounded-full bg-emerald-400/20 blur-3xl"></div>
+            <i class="fab fa-whatsapp relative text-6xl text-emerald-300 transition duration-500 group-hover:scale-110"></i>
+            <div class="relative flex items-center gap-2 font-mono text-[11px] text-slate-300 sm:text-xs">
+              <span class="rounded border border-white/15 bg-slate-950/60 px-2 py-1">WhatsApp</span><i class="fas fa-arrows-left-right text-emerald-300/70"></i>
+              <span class="rounded border border-white/15 bg-slate-950/60 px-2 py-1">API</span><i class="fas fa-arrows-left-right text-emerald-300/70"></i>
+              <span class="rounded border border-white/15 bg-slate-950/60 px-2 py-1">CRM</span>
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <p class="font-mono text-xs text-sky-400">C# · Web API 2 · SignalR · SQL Server</p>
+            <h3 class="mt-1 text-xl font-bold text-white"><span class="i-es">WhatsApp para un CRM de cobros</span><span class="i-en">WhatsApp for a collections CRM</span></h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400"><span class="i-es">API que conecta WhatsApp con el CRM de POM: los gestores vinculan números por QR, envían y reciben texto y archivos, y ven los mensajes nuevos al instante sin recargar. Los mensajes llegan por webhook firmado con JWT y se guardan en SQL Server.</span><span class="i-en">API that connects WhatsApp to POM's CRM: agents link numbers via QR, send and receive text and files, and see new messages instantly without reloading. Messages arrive through a JWT-signed webhook and are stored in SQL Server.</span></p>
+            <p class="mt-auto pt-5 text-sm font-semibold text-emerald-300"><i class="fas fa-bolt mr-1.5"></i><span class="i-es">Tiempo real con SignalR, sin consultas periódicas</span><span class="i-en">Real time with SignalR, no polling</span></p>
+          </div>
+        </article>
+        <article class="reveal card group flex flex-col overflow-hidden" style="--d: 80ms">
           <div class="overflow-hidden border-b border-white/5 bg-slate-900"><img src="images/siare.gif" alt="SIARE" loading="lazy" class="aspect-video w-full object-cover object-top transition duration-500 group-hover:scale-105"></div>
           <div class="flex flex-1 flex-col p-5">
             <p class="font-mono text-xs text-sky-400">Laravel · MySQL</p>
